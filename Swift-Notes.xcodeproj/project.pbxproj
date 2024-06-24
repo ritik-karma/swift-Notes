@@ -1,0 +1,112 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXFileReference section */
+		F8DD30882C2931A5003C6811 /* protocols.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = protocols.playground; sourceTree = "<group>"; };
+		F8DD30892C2931A5003C6811 /* 0Rough.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 0Rough.playground; sourceTree = "<group>"; };
+		F8DD308A2C2931A5003C6811 /* 0exercises.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 0exercises.playground; sourceTree = "<group>"; };
+		F8DD308B2C2931A5003C6811 /* Codility .playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Codility .playground"; sourceTree = "<group>"; };
+		F8DD308E2C2931A5003C6811 /* apiCall.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = apiCall.playground; sourceTree = "<group>"; };
+		F8DD308F2C2931A5003C6811 /* codable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = codable.playground; sourceTree = "<group>"; };
+		F8DD30902C2931A5003C6811 /* tryCatch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = tryCatch.playground; sourceTree = "<group>"; };
+		F8DD30912C2931A5003C6811 /* loops.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = loops.playground; sourceTree = "<group>"; };
+		F8DD30922C2931A5003C6811 /* Enums.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Enums.playground; sourceTree = "<group>"; };
+		F8DD30932C2931A5003C6811 /* string.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = string.playground; sourceTree = "<group>"; };
+		F8DD30942C2931A5003C6811 /* struct_class.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = struct_class.playground; sourceTree = "<group>"; };
+		F8DD30952C2931A5003C6811 /* if_switch_?.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "if_switch_?.playground"; sourceTree = "<group>"; };
+		F8DD30962C2931A5003C6811 /* func & closures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "func & closures.playground"; sourceTree = "<group>"; };
+		F8DD30972C2931A5003C6811 /* collectionTypes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = collectionTypes.playground; sourceTree = "<group>"; };
+		F8DD30982C2931A5003C6811 /* optionals.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = optionals.playground; sourceTree = "<group>"; };
+		F8DD30992C2931A5003C6811 /* The Basics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "The Basics.playground"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		F857C4F92C293106006E5B6B = {
+			isa = PBXGroup;
+			children = (
+				F8DD30882C2931A5003C6811 /* protocols.playground */,
+				F8DD308C2C2931A5003C6811 /* Exercise */,
+				F8DD308E2C2931A5003C6811 /* apiCall.playground */,
+				F8DD308F2C2931A5003C6811 /* codable.playground */,
+				F8DD30902C2931A5003C6811 /* tryCatch.playground */,
+				F8DD30912C2931A5003C6811 /* loops.playground */,
+				F8DD30922C2931A5003C6811 /* Enums.playground */,
+				F8DD30932C2931A5003C6811 /* string.playground */,
+				F8DD30942C2931A5003C6811 /* struct_class.playground */,
+				F8DD30952C2931A5003C6811 /* if_switch_?.playground */,
+				F8DD30962C2931A5003C6811 /* func & closures.playground */,
+				F8DD30972C2931A5003C6811 /* collectionTypes.playground */,
+				F8DD30982C2931A5003C6811 /* optionals.playground */,
+				F8DD30992C2931A5003C6811 /* The Basics.playground */,
+			);
+			sourceTree = "<group>";
+		};
+		F8DD308C2C2931A5003C6811 /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				F8DD30892C2931A5003C6811 /* 0Rough.playground */,
+				F8DD308A2C2931A5003C6811 /* 0exercises.playground */,
+				F8DD308B2C2931A5003C6811 /* Codility .playground */,
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		F857C4FA2C293106006E5B6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = F857C4FD2C293106006E5B6B /* Build configuration list for PBXProject "Swift-Notes" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F857C4F92C293106006E5B6B;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		F857C4FE2C293106006E5B6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		F857C4FF2C293106006E5B6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F857C4FD2C293106006E5B6B /* Build configuration list for PBXProject "Swift-Notes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F857C4FE2C293106006E5B6B /* Debug */,
+				F857C4FF2C293106006E5B6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F857C4FA2C293106006E5B6B /* Project object */;
+}
