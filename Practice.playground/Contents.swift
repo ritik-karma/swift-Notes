@@ -1,3 +1,4 @@
-import UIKit
-
-var greeting = "Hello, playground"
+class demo {
+    var age = 40
+    func multiple
+}
