@@ -1,11 +1,32 @@
 /*For example
 Excel is struct(change on shared excel sheet will not affect to another & main.)
 googlesheet is classes (change on shared google sheet will not affect to another & main.)
-
 */
 //MARK: - struct (Value type)
 
+//Aggregate multiple value & func into a single value.
+//light weight & easy to use
+
 //ex1
+
+struct user {
+    let userName: String
+    var invisible: Bool = true
+    var freinds: [String] = []
+}
+
+var alice = user(userName: "alice")
+alice.freinds = ["mohit"]
+
+var bruno = user(userName: "bruno")
+bruno.freinds = alice.freinds
+
+alice.freinds.append("ritik")
+
+alice.freinds
+bruno.freinds
+
+//ex2
 
 struct vehicle {
     var make: String

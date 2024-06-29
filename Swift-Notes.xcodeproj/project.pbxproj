@@ -14,14 +14,14 @@
 		F8DD308F2C2931A5003C6811 /* codable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = codable.playground; sourceTree = "<group>"; };
 		F8DD30902C2931A5003C6811 /* tryCatch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = tryCatch.playground; sourceTree = "<group>"; };
 		F8DD30912C2931A5003C6811 /* loops.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = loops.playground; sourceTree = "<group>"; };
-		F8DD30922C2931A5003C6811 /* Enums.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Enums.playground; sourceTree = "<group>"; };
+		F8DD30922C2931A5003C6811 /* Enums.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Enums.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F8DD30932C2931A5003C6811 /* string.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = string.playground; sourceTree = "<group>"; };
 		F8DD30942C2931A5003C6811 /* struct_class.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = struct_class.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F8DD30952C2931A5003C6811 /* if_switch_?.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "if_switch_?.playground"; sourceTree = "<group>"; };
 		F8DD30962C2931A5003C6811 /* func & closures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "func & closures.playground"; sourceTree = "<group>"; };
 		F8DD30972C2931A5003C6811 /* collectionTypes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = collectionTypes.playground; sourceTree = "<group>"; };
 		F8DD30982C2931A5003C6811 /* optionals.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = optionals.playground; sourceTree = "<group>"; };
-		F8DD30992C2931A5003C6811 /* The Basics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "The Basics.playground"; sourceTree = "<group>"; };
+		F8DD30992C2931A5003C6811 /* The Basics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "The Basics.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */

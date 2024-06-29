@@ -24,8 +24,10 @@ var age = 24                        // var is mutable
     //or
 var aage: Int = 24
 
-let foo = false
+var foo = false
 var foo2 = foo
+foo = true
+foo2
 
 var zoo: Int
 var lastName = "Karma"
