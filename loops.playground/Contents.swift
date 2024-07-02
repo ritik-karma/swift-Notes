@@ -27,6 +27,9 @@ let star = ["jord", "ayu", "ok"]
 for peo in star where peo == "ok" {           //Optional -> where
     print(peo)
 }
+for (index, value) in star.enumerated() {     //used for accessing index & vlaue
+    print("the \(value) is at \(index)")
+}
 
 for i in 0...25 {                            //... means to , ..< means to less then
     print(i)

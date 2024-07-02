@@ -58,7 +58,7 @@ func tupleFunc(num: (Int, Int, String)){
 tupleFunc(num: (1, 34, "aoo"))
 
 
-//MARK: - inout
+//MARK: - inout func
 /*
 - With this we can use predeclared var & make I/P parameter var (muatable)
 - it always use with '&' while calling func
@@ -71,7 +71,7 @@ func nuc (number:inout Int) {
 nuc(number: &number)       ///'&___''work with address not values
 
 
-//MARK: - defer
+//MARK: - defer func
 ///defer code will execute at end of the function
 func deferFunc () {
     print("Beginning")
@@ -85,7 +85,7 @@ func deferFunc () {
 deferFunc()
 
 
-//MARK: - overloading
+//MARK: - overloading in func
 ///Can create diff func with same name
 func overloading (o: String) {
     print("o")
@@ -139,3 +139,5 @@ let id = {
 }
 id("chal")
  
+
+
