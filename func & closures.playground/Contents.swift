@@ -58,7 +58,7 @@ func tupleFunc(num: (Int, Int, String)){
 tupleFunc(num: (1, 34, "aoo"))
 
 
-//MARK: - inout func
+//MARK:  inout func
 /*
 - With this we can use predeclared var & make I/P parameter var (muatable)
 - it always use with '&' while calling func
@@ -71,7 +71,7 @@ func nuc (number:inout Int) {
 nuc(number: &number)       ///'&___''work with address not values
 
 
-//MARK: - defer func
+//MARK:  defer func
 ///defer code will execute at end of the function
 func deferFunc () {
     print("Beginning")
@@ -85,7 +85,7 @@ func deferFunc () {
 deferFunc()
 
 
-//MARK: - overloading in func
+//MARK:  overloading in func
 ///Can create diff func with same name
 func overloading (o: String) {
     print("o")
@@ -96,7 +96,7 @@ func overloading (m: String) {
 ///if I\P parameter variable will also be same then it will be 'function overriding' which only can be done in inheritence classes
 
   
-//MARK: -> Generic Function
+//MARK:  Generic Function
 ///Can accept any dataType as an I/P parameter (can also used in classes.
 ///Can use multiple generics also.
 func geneFunc<T>(m:T, n: T, o: String = "gen") {  //Instead of 'T' can use any string
@@ -138,6 +138,65 @@ let id = {
     return "this is return \(id)"
 }
 id("chal")
+
+
+//MARK:  trailing closure
+
+func stud (name: ()->(), id: Int){  //name = closure parameter name taking closure as func iI/P parameter
+    print("i am in func body")
+    name()  //printing closure content which will be taken as I/P
+    print("Ending the func with \(id)")
+}
+stud(name: {
+    print("i am in the closure body with")
+}, id: 89)
+
  
+//MARK:  Autoclosures (can give closure without {}
+
+func display (wish: @autoclosure ()-> ()){
+    wish()
+}
+
+display(wish: print("wishesh to autoclosure"))
 
 
+//MARK: Trailing closure with I/P type and return
+
+func travel (price: Int, action: (String)-> String){
+    
+    print("I am ready to go")
+    action("nononon")
+    print(action("empty"))
+    let send =  action("Goa")
+    print(send)
+    
+    print(action("Mars price is \(price)"))
+    
+}
+
+travel(price: 100, action: {
+    (action: String) -> String in
+    print("Trip To :-")
+    return "i am going to \(action)"
+    //return value will only print with print() func only
+}
+)
+
+//MARK: Note: closure also capture values (holds memory not like func that gives new values every time calling it (used in api
+
+
+func numbuu ()-> (String)-> Void {// func that return closure
+    var counter = 1
+    print ("close \(counter)")
+    return {_ in 
+        print("return with closer \(counter)")
+        counter += 1
+    }
+}
+print(numbuu())//WILL print description of return not result Because In Swift, closures do not automatically execute when passed to functions like print. Instead, they are treated as objects, and what gets printed is their description or the type information, not the result of executing the closure.
+var result = numbuu() //return closure is assigned to the var result
+result("goa")// Each call to result("goa") executes the closure, which prints the current value of counter and then increments it.
+result("goa")
+result("goa")
+numbuu()

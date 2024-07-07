@@ -1,16 +1,13 @@
-struct user {
-    let userName: String
-    var invisible: Bool = true
-    var freinds: [String] = []
+func numWaterBottles(_ numBottles:  Int, _ numExchange: Int) -> Int {
+    var bottleDrinked = 0
+    var bottles = numBottles
+    bottleDrinked += bottles
+    
+    while bottles > 0 {
+        bottles = bottles / numExchange
+        bottles += bottles % numExchange
+        bottleDrinked += bottles
+    }
+    return bottleDrinked
 }
 
-var alice = user(userName: "alice")
-alice.freinds = ["mohit"]
-
-var bruno = user(userName: "bruno")
-bruno.freinds = alice.freinds
-
-alice.freinds.append("ritik")
-
-alice.freinds
-bruno.freinds
