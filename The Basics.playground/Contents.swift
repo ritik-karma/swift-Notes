@@ -41,6 +41,11 @@ let y = 10
 x -= 2                              //x = x-2
 x != y
 
+//tuple assignment
+var (num1, num2) = (2, 3)
+
+
+
 //MARK: - String interpolation
 ///taking variable inside the text
 let ages = 55

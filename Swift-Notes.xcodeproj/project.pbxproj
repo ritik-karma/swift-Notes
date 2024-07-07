@@ -20,7 +20,7 @@
 		F8DD30952C2931A5003C6811 /* if_switch_?.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "if_switch_?.playground"; sourceTree = "<group>"; };
 		F8DD30962C2931A5003C6811 /* func & closures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "func & closures.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F8DD30972C2931A5003C6811 /* collectionTypes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = collectionTypes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		F8DD30982C2931A5003C6811 /* optionals.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = optionals.playground; sourceTree = "<group>"; };
+		F8DD30982C2931A5003C6811 /* optionals.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = optionals.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F8DD30992C2931A5003C6811 /* The Basics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "The Basics.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
