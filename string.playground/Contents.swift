@@ -19,6 +19,7 @@ name+"karma1234" ///only print won't add in actuall variable
 name
 name.count
 name.lowercased()
+
 name.isEmpty
 name.last              /// last char in string / similar .first
 name.hasPrefix("k")   ///Prefix = String starts with

@@ -13,7 +13,7 @@
 		F8DD30902C2931A5003C6811 /* tryCatch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = tryCatch.playground; sourceTree = "<group>"; };
 		F8DD30912C2931A5003C6811 /* loops.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = loops.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F8DD30922C2931A5003C6811 /* Enums.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Enums.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		F8DD30932C2931A5003C6811 /* string.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = string.playground; sourceTree = "<group>"; };
+		F8DD30932C2931A5003C6811 /* string.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = string.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F8DD30942C2931A5003C6811 /* struct_class.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = struct_class.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F8DD30952C2931A5003C6811 /* if_switch_?.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "if_switch_?.playground"; sourceTree = "<group>"; };
 		F8DD30962C2931A5003C6811 /* func & closures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "func & closures.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
