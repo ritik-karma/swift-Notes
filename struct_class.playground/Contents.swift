@@ -1,17 +1,48 @@
-/*For example
-Excel is struct(change on shared excel sheet will not affect to another & main.)
-googlesheet is classes (change on shared google sheet will not affect to another & main.)
+/*
+ 
+For example :- Excel is struct(change on shared excel sheet will not affect to another & main.) & Googlesheet is classes (change on shared google sheet will not affect to another & main.)
+ 
+ init =  The init method is used to initialize an instance of a structure or class, setting up its initial state by assigning values to its properties.
+  
 */
+
 //MARK: - struct (Value type)
+/*
+ 
+ ● Aggregate multiple value & func into a single value.
+ ● light weight & easy to use.
+ 
+ 'init' in struct = Swift automatically provides a memberwise initializer if you don't define any initializers. (But You can define a custom init method to set up properties with specific values or perform additional setup. but no sense of  using cutom init)
+ 
+ */
 
-//Aggregate multiple value & func into a single value.
-//light weight & easy to use
+struct student {
+    //It holds member variables & member func's
+    var name = "ios"  //Given an initial value which is nt mandatory
+    
+    static var id = 10 // 'Static' means It is shared among all instances of the structure. There is only one copy of this variable, regardless of how many instances of the structure are created.Static variables are accessed and modified through the structure itself, not through instances.
+    
+    //Static func only accept static var
+    func students () {
+        print("Student names \(name)")
+    }
+}
+let n =  student().name    //Given only name nt member func
+//n.students() //error
 
-//ex1
+let y = student()               //Given full struct
+let x = student(name: "swift")  //Given full struct with changed initial value
+x.students()
+
+//error  y.id
+student.id
+
+student().students()
 
 struct user {
+    
     let userName: String
-    var invisible: Bool = true
+    var invisible = true
     var freinds: [String] = []
 }
 
@@ -26,7 +57,10 @@ alice.freinds.append("ritik")
 alice.freinds
 bruno.freinds
 
-//ex2
+
+
+
+
 
 struct vehicle {
     var make: String
@@ -51,15 +85,18 @@ hondaCivic.hp       //changing hp of hondaCar will not affect to hp of hondacivi
 
 
 //MARK: - class (Refrence type)
+/*
+ 'init' in classes = Classes do not get a memberwise initializer by default.You must define an init method to set up properties and call super.init() if the class inherits from another class.
+For init we can use ‘?’ for initially nill OR give Default value insted of self initialization but should be created as var not let to change further.
+*/
 
 class dev {
     var name: String
     var job_title = "ios developer"
     var sallary: Int
     
-//initializer (required) (can use ‘?’ for initially nill OR give Default value insted of self initialization but should be created as var not let to change further )
-    init (name: String, sallary: Int) { //init(initialization) =  what should we take while declaring object
-    self.name = name //self = while taking name refers to name of this class
+    init (name: String, sallary: Int) { //init =  what should we take while declaring object
+    self.name = name //self = Refer within this class (not outside name)
     self.sallary = sallary
     }
 }

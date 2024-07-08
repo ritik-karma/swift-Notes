@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXFileReference section */
-		F83D7E422C29360400771A82 /* Practice.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Practice.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		F83D7E442C29363000771A82 /* Practice-Codility..playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Practice-Codility..playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F8DD30882C2931A5003C6811 /* protocols.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = protocols.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F8DD308E2C2931A5003C6811 /* apiCall.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = apiCall.playground; sourceTree = "<group>"; };
 		F8DD308F2C2931A5003C6811 /* codable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = codable.playground; sourceTree = "<group>"; };
@@ -24,12 +22,15 @@
 		F8DD30992C2931A5003C6811 /* The Basics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "The Basics.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F8CEE8FE2C3B885C0034BD1F /* Practice */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Practice; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXGroup section */
 		F857C4F92C293106006E5B6B = {
 			isa = PBXGroup;
 			children = (
-				F83D7E442C29363000771A82 /* Practice-Codility..playground */,
-				F83D7E422C29360400771A82 /* Practice.playground */,
+				F8CEE8FE2C3B885C0034BD1F /* Practice */,
 				F8DD30882C2931A5003C6811 /* protocols.playground */,
 				F8DD308E2C2931A5003C6811 /* apiCall.playground */,
 				F8DD308F2C2931A5003C6811 /* codable.playground */,

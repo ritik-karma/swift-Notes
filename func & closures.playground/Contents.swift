@@ -163,25 +163,37 @@ display(wish: print("wishesh to autoclosure"))
 
 //MARK: Trailing closure with I/P type and return
 
-func travel (price: Int, action: (String)-> String){
-    
+func travel (price: Int, action: (String, Int)-> String){     //also we can give multi closure I/P & multi I/P in 1 closure also
     print("I am ready to go")
-    action("nononon")
-    print(action("empty"))
-    let send =  action("Goa")
+    action("mumbai", 5)
+    print(action("koochi", 4))
+    let send =  action("Goa", 10)
     print(send)
     
-    print(action("Mars price is \(price)"))
+    print(action("Mars price is \(price)", 23))
     
 }
-
+//MARK: 3 ways to call closures
 travel(price: 100, action: {
-    (action: String) -> String in
+    (action: String, Int) -> String in  //having some string value in the action which was passed in func. also can give any name instead of string
     print("Trip To :-")
     return "i am going to \(action)"
     //return value will only print with print() func only
 }
 )
+//below is the simplified version ↓
+travel(price: 200) { tripName,num  in
+    return "i am going to \(tripName) with \(num) members "
+}
+//More simplified version with shorthand '$n'
+travel(price: 200) {
+    return "i am going  to \($0) and the members going are \($1)" //closure value will automatically sit in shorthand. $0 is first input argument
+}
+
+
+
+
+
 
 //MARK: Note: closure also capture values (holds memory not like func that gives new values every time calling it (used in api
 
@@ -200,3 +212,6 @@ result("goa")// Each call to result("goa") executes the closure, which prints th
 result("goa")
 result("goa")
 numbuu()
+
+
+

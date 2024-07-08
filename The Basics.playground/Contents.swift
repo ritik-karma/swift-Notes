@@ -28,8 +28,7 @@ var foo = false
 var foo2 = foo
 foo = true
 foo2
-
-var zoo: Int
+ var zoo: Int
 var lastName = "Karma"
 print("String concadination \(name+lastName )") 
 
