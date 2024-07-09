@@ -10,6 +10,14 @@ for i in 0..<5 {
 }
 
 
+let arrayOfName = ["ayush", "mohit", "rakesh", "jugnuo"]
+for name in arrayOfName{
+    print(name)
+    if (name == "mohit"){
+        break ///oposite is continue
+        
+    }
+}
 
 
 

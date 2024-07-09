@@ -24,6 +24,7 @@ item.first  //.last                // first or last item in array
 item.reverse()                     // reverse the order
 //item.contains(where: ...)
 item.sort()                        // increasing order
+///For assigning in another var use sorted instead of sort
 item.sort(by: >)                   // decreasing order
 item.swapAt(0, 3)                  /// swapping value of indexes
 item.shuffle()                     // random orders
@@ -97,7 +98,61 @@ print(numb.5[2])
 numb.6.name = "ritik"
 
 
+//MARK: - High order function
+
+//MARK:  map
+//it uses closures
 
 
+//lets do op throughtout the array
+
+var numbers = [1,2,3,4,5]
+var names = ["ayush", "mohan", "guddu", "bhaiyu"]
+
+var numbersMultiplyBy2 = numbers.map {
+    $0*2  //in this shorthand is used as an each element in this array
+}
+var capitalNames = names.map {
+    $0.uppercased()
+}
+        ///OR can do without map also if do nt want to acces each one instead do all
+//var capitalNames = names.description.uppercased()
+numbersMultiplyBy2
+capitalNames
+
+//MARK:  COMPAct map
+///similar to map but it will skip the nil values
+var capNames = names.compactMap {
+    $0
+}
+
+//MARK: Flat map
+///with flat map combination of array will act as an 1 array
+var combineArray = [[1,2,3],[4,5,6],[7,8,9]]
+var flatArray = combineArray.flatMap {
+    $0
+}
+print(flatArray)
+
+//MARK: Reduce
+
+flatArray.reduce(0) {
+        $0+$1         ///$0 is previous value & $1 is the next value
+    ///1+2=3+4=7+5.....=45
+}
+
+//MARK: Filter
+let evenNum = flatArray.filter {
+    $0%2==0
+}
+
+
+//MARK: Sorted
+///In a perticular order
+let DecOrder = flatArray.sorted {
+    $0>$1
+}
+        ///OR
+let accOrder = flatArray.sorted(by: >)
 
 
