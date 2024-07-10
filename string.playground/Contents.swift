@@ -31,7 +31,10 @@ name
 name.removeFirst(2)
 name                            // remove will affect the main variable
 
-for char in name {
+///for printing reverse string
+let surname = "karma"
+for char in surname.reversed() {
     print(char) }               // accessing each character in a string
+
 
 

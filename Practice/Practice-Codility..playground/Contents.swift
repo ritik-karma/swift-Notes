@@ -29,26 +29,4 @@ solution(5, 0, 2)
 
 
 
-//MARK: -> Codility prob 2
 
-///Q: You are given an array A consisting of N numbers. In one move you can delete either the first two, the last two, or the first and last elements of A. No move can be performed if the length of A is smaller than 2. The result of each move is the sum of the deleted
-
-
-
-//Delete either first2, last2 & first+last 2 elements = sum should be equal only then result += 1
-
-//
-//
-//
-//func sol(_ A: [Int]) -> Int {
-//    if A.count < 2 {
-//
-//        if A.first + A[1] ==
-//
-//
-//    } else {
-//        print("Give array more then 2!")
-//    }
-//
-//    return 0
-//}
