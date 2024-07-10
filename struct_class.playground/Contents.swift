@@ -3,8 +3,10 @@
 For example :- Excel is struct(change on shared excel sheet will not affect to another & main.) & Googlesheet is classes (change on shared google sheet will not affect to another & main.)
  
  init =  The init method is used to initialize an instance of a structure or class, setting up its initial state by assigning values to its properties.
-  
+  (also known as constructer in other languages)
 */
+//It holds member variables & member func's
+
 
 //MARK: - struct (Value type)
 /*
@@ -17,7 +19,7 @@ For example :- Excel is struct(change on shared excel sheet will not affect to a
  */
 
 struct student {
-    //It holds member variables & member func's
+   
     var name: String
     var surname = "karma"   //Given an initial value which is nt mandatory
     lazy var species = "human"
@@ -75,10 +77,10 @@ struct vehicle {
     func getVInfo() {
         print("Made in year is \(make), model number is \(model) and the horse power of the vehicle is \(hp) ")
     }
-    //not required initializer
+    ///not required initializer
 }
 var hondaCivic = vehicle(make:"this year", model: 112, hp: 500)
-//hondacivic will known as object same as in class
+///hondacivic will known as object same as in class
 
 hondaCivic.getVInfo()
 
@@ -90,7 +92,7 @@ hondaCivic.hp       //changing hp of hondaCar will not affect to hp of hondacivi
 
 
 //MARK: Computed properties
-//Computed properties in Swift are properties that do not store a value directly. Instead, they provide a getter and optionally a setter to retrieve and set other properties or perform calculations.
+///Computed properties in Swift are properties that do not store a value directly. Instead, they provide a getter and optionally a setter to retrieve and set other properties or perform calculations.
 struct Rectangle {
     var width: Double
     var height: Double
@@ -100,7 +102,7 @@ struct Rectangle {
         return width * height
     }
     
-    // Computed property with a setter
+    /// Computed property with a setter
     var perimeter: Double {
         get {
             return 2 * (width + height)
@@ -140,8 +142,8 @@ print(rect.area)  // Outputs: 50.0
 
 
 //MARK: lazy
-//used for first time use var
-//A lazy var in Swift is a property that is not initialized until it is accessed for the first time. This is useful for properties that are computationally expensive to create or are not always needed.
+///used for first time use var
+///A lazy var in Swift is a property that is not initialized until it is accessed for the first time. This is useful for properties that are computationally expensive to create or are not always needed.
 struct DataLoader {
     var fileName: String
     
@@ -157,20 +159,20 @@ var loader = DataLoader(fileName: "example.txt")
 print("DataLoader initialized.")
 
 print(loader.fileContents)
-// Accessing again does not print "Loading file..." since it's already initialized
+/// Accessing again does not print "Loading file..." since it's already initialized
 print(loader.fileContents)
 
 
 //MARK: Property Observers (didset willset)
-//oldvalue is predefined
+///oldvalue is predefined
 
 var a: Int
 
 a = 10
 a = 100
 
-// willset 10     (remember only old value)
-//didset  10 100 (remember both old & new value)
+/// willset 10     (remember only old value)
+///didset  10 100 (remember both old & new value)
 
 struct Progress {
     var task: String
@@ -185,44 +187,50 @@ struct Progress {
 }
 var progres1 = Progress(task: "code", pay: 500)
 progres1.pay
-progres1.pay = 1000  //Output: my code amount is 500 /n my code amount is before 500 and current is 1000
+progres1.pay = 1000  ///Output: my code amount is 500 /n my code amount is before 500 and current is 1000
  
 
 
 //MARK: - class (Refrence type)
 /*
+ initialization is compulsary in class
+ 
  'init' in classes = Classes do not get a memberwise initializer by default.You must define an init method to set up properties and call super.init() if the class inherits from another class.
 For init we can use ‘?’ for initially nill OR give Default value insted of self initialization but should be created as var not let to change further.
 */
 
 class dev {
     var name: String
-    var job_title = "ios developer"
+    var job_title = "ios developer"   
     var sallary: Int
     
-    init (name: String, sallary: Int) { //init =  what should we take while declaring object
-    self.name = name //self = Refer within this class (not outside name)
-    self.sallary = sallary
+    init (name: String, sallary: Int) { ///init =  what should we take while declaring object
+        self.name = name                    ///self = Refer within this class (not outside name)
+        self.sallary = sallary
+        }
+    
+    convenience init (name: String){    ///another init method= Used to give default values
+
+        self.init(name: name, sallary: 2000)
     }
 }
-
+let T03 = dev(name: "kdjkf")
 let T04 = dev(name: "ritik", sallary: 500 )
-T04.job_title
-T04.job_title = "ios"
-T04.job_title
+let T05 = dev(name: "ayush", sallary: 900)
+ 
 
-//Shown below how it is refrence type.
+///Shown below how it is refrence type.
 let mySalary = T04
 mySalary.sallary = 1000
-T04.sallary               //Change in my salary will affect t04 salary also
+T04.sallary               ///Change in my salary will affect t04 salary also
 
 //MARK: Inheritence (Only available in classes)
-class ios_developer : dev{ //inherite properties of dev class
+class ios_developer : dev{ ///inherite properties of dev class
     var uiFramework: String
     init(name: String,  sallary: Int,  uiFramework: String) {
         self.uiFramework = uiFramework
         super.init(name: name,  sallary: sallary)
-        //Again init and super.init is required while inheriting properties of parent class
+        ///Again init and super.init is required while inheriting properties of parent class
     }
 }
 
