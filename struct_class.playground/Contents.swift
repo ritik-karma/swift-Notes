@@ -5,8 +5,8 @@ For example :- Excel is struct(change on shared excel sheet will not affect to a
  init =  The init method is used to initialize an instance of a structure or class, setting up its initial state by assigning values to its properties.
   (also known as constructer in other languages)
 */
-//It holds member variables & member func's
-
+///It holds member variables & member func's
+///if we assign struct object to another var it will copy that but in the class both will refer to the same class.
 
 //MARK: - struct (Value type)
 /*
@@ -196,47 +196,72 @@ progres1.pay = 1000  ///Output: my code amount is 500 /n my code amount is befor
  initialization is compulsary in class
  
  'init' in classes = Classes do not get a memberwise initializer by default.You must define an init method to set up properties and call super.init() if the class inherits from another class.
-For init we can use ‘?’ for initially nill OR give Default value insted of self initialization but should be created as var not let to change further.
+    For init we can use ‘?’ for initially nill OR give Default value insted of self initialization but should be created as var not let to change further.
+ 
+ 'convenience init' = another init method Used to give some defalult var
 */
+
+//MARK: terms
+/*
+ init =  what should we take while declaring object
+ self = Refer within this class var (not outside var)
+ super = Use parent class var in current class
+ override =  Used to overriding the parent class var or func in current class
+ */
 
 class dev {
     var name: String
     var job_title = "ios developer"   
     var sallary: Int
     
-    init (name: String, sallary: Int) { ///init =  what should we take while declaring object
-        self.name = name                    ///self = Refer within this class (not outside name)
+    init (name: String, sallary: Int) {
+        self.name = name
         self.sallary = sallary
+        self.sallary = 5
         }
     
-    convenience init (name: String){    ///another init method= Used to give default values
+    convenience init (name: String){
 
         self.init(name: name, sallary: 2000)
+    }
+    func sayHello () {
+        print("hello from parent class")
+    }
+    func say() {
+        print("Hi")
     }
 }
 let T03 = dev(name: "kdjkf")
 let T04 = dev(name: "ritik", sallary: 500 )
 let T05 = dev(name: "ayush", sallary: 900)
  
+T04.sallary ///O/P is 5 because in init last var is changing the I/P
 
 ///Shown below how it is refrence type.
-let mySalary = T04
-mySalary.sallary = 1000
-T04.sallary               ///Change in my salary will affect t04 salary also
+let T06 = T04
+T06.sallary = 1000
+T04.sallary               ///Change in my salary will affect t04 salary also because they are refering to the same class
+
 
 //MARK: Inheritence (Only available in classes)
 class ios_developer : dev{ ///inherite properties of dev class
     var uiFramework: String
     init(name: String,  sallary: Int,  uiFramework: String) {
         self.uiFramework = uiFramework
-        super.init(name: name,  sallary: sallary)
+        super.init(name: name,  sallary: sallary)///
         ///Again init and super.init is required while inheriting properties of parent class
     }
-}
+    override func say() {
+        super.sayHello()
+        print("Hi overided")
+    }
 
+}
 
 var ritik = ios_developer(name: "Ritik",  sallary: 1000000, uiFramework: "SwiftUi")
 T04.job_title
 T04.job_title = "kjklj"
 T04.job_title
 
+ritik.say()
+ritik.sayHello()///it is an inherite property
