@@ -1,12 +1,12 @@
-func isPalindrome(_ x: Int) -> Bool {
-    var y = String(x)
-    var z = ""
-    for char in y.reversed() {
-        z.append(char)
+func countOdds(_ low: Int, _ high: Int) -> Int {
+        var count = 0
+    for i in low...high{
+           if  (i%2 != 0) {
+            count+1
+           } else {
+               
+           }
+        }
+        return count
     }
-    if (y==z){
-        return true
-    } else {
-        return false
-    }
-}
+

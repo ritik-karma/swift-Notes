@@ -119,7 +119,7 @@ for char in stringNumber {
 //MARK: - while loop
 
 var countdown = 10
-while countdown >= 0 {
+while countdown >= 0 {                  ///take only bool condition
     print("Launching in \(countdown)")
     if countdown == 0 {
         print(".....Launch.....")
