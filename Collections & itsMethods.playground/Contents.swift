@@ -17,7 +17,7 @@ item.append("ayush")                    //Add in array (let can't add)
 item.append(contentsOf: ["q","r","p"])  //for adding multiple elements
 item.append(contentsOf: clas)           // also insert another array
 item.insert("ay", at: 0)                 // inert at 0 index and shift the array
-item.isEmpty                         
+item.isEmpty
 item.count                          // counts item in array
 item.max()                          /// Returns maximum value in array
 item.first  //.last                // first or last item in array
