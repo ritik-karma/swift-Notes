@@ -29,7 +29,7 @@ item.sort(by: >)                   // decreasing order
 item.swapAt(0, 3)                  /// swapping value of indexes
 item.shuffle()                     // random orders
 item.contains("ayush")             //it return true or false
-item.remove(at: 1)                 //Remove from index 1
+item.remove(at: 1)                 //Remove the index 1 block
 item.removeFirst()                 //remove from first
 item.removeLast()                  // remove last item
 item.count                        // no of elements in a array
@@ -141,17 +141,18 @@ flatArray.reduce(0) {
     ///1+2=3+4=7+5.....=45
 }
 
+//MARK: RemoveAll
+///Used when a specific condition met remove that in which it is 2
+flatArray.removeAll { $0 == 2 }
+
+
 //MARK: Filter
-let evenNum = flatArray.filter {
-    $0%2==0
-}
+let evenNum = flatArray.filter { $0%2==0 }
 
 
 //MARK: Sorted
 ///In a perticular order
-let DecOrder = flatArray.sorted {
-    $0>$1
-}
+let DecOrder = flatArray.sorted { $0>$1 }
         ///OR
 let accOrder = flatArray.sorted(by: >)
 
