@@ -10,6 +10,23 @@ for i in 0..<5 {
 }
 
 
+//MARK: Traversing an Array
+let array = [10, 20, 30, 40, 50]
+///By Values
+for value in array {
+    print("Value: \(value)")
+}
+///By Indexes
+for index in 0..<array.count {
+    let value = array[index]
+    print("Index: \(index), Value: \(value)")
+}
+
+
+                                    
+
+
+
 let arrayOfName = ["ayush", "mohit", "rakesh", "jugnuo"]
 for name in arrayOfName{
     print(name)
