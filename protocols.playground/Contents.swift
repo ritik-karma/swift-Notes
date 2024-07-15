@@ -6,7 +6,8 @@ import Foundation
 protocol protocolName {
     //code
 }
-/* { get } => Read only
+/* 
+ { get } => Read only
     { get set} => read write
  */
 
