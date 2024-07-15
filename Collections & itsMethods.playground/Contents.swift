@@ -53,7 +53,7 @@ var ages = Set(age)         // copy from an array
 ok.insert(101)              //insert is used instead of append
 ok.insert(101).inserted     /// .inserted return bool value as 101 is already ther it will return false
 
-//MARK: - Dictionary [Key : value]
+//MARK: - Dictionary [Key : value] (or can make any type of pair) (no indexing)
 /*(Better look-up then array beca.. constant time lookup)*/
 
 let devices: [Int: String] = [:]       //Empty Dictionary (Can use any Data type) or automatically swift will select after filling

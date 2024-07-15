@@ -192,6 +192,7 @@ progres1.pay = 1000  ///Output: my code amount is 500 /n my code amount is befor
 
 
 //MARK: - class (Refrence type)
+///Let can also be muatable in classes
 /*
  initialization is compulsary in class
  
@@ -255,6 +256,9 @@ class ios_developer : dev{ ///inherite properties of dev class
         super.sayHello()
         print("Hi overided")
     }
+    func bye() {
+        print("Bye Bye")
+    }
 
 }
 
@@ -265,3 +269,50 @@ T04.job_title
 
 ritik.say()
 ritik.sayHello()///it is an inherite property
+
+
+///Another method to use child class
+let mohit = dev(name: "j") as! ios_developer///treat dev class as ios developer . nt recommended because they are not exactly same
+mohit.bye()
+mohit.uiFramework
+
+//MARK:  Memory ARC(Automatic Reference Counting) (Only in classes)
+/*
+ For each object it holds the count that how much refrences are pointing to this object.
+ Used for deallocating the object means you have done work  with object or not allocated to any another var . now you want to nil it but not mannually.
+ working:
+    • When you create an instance of a class, ARC sets its reference count to 1.
+     •    Every time you assign that instance to a new variable or constant, ARC increases the reference count by 1.
+     •    When a reference to the instance is removed, ARC decreases the reference count by 1.
+     •    When the reference count reaches 0, ARC deallocates the instance, freeing up memory.
+ 
+ 3 Methods:-
+ 
+ Strong (Default) : Previouslly we are using 'strong' method which is mannually nilling.
+ 
+ weak: Can accept optional values
+ 
+ unowned: Won't accept optional values.
+ 
+ */
+
+class module {
+    var name: String
+    init(name: String) {
+        self.name = name
+    }
+    var sub: submodule?
+    
+    deinit {    ///Only calls when object is being released from the memory
+        print("Object is being deinitialized")
+    }
+}
+
+
+class submodule {
+    var num: Int
+    init(num: Int) {
+        self.num = num
+    }
+    var topic: module?
+}

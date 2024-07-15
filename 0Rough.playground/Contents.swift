@@ -1,14 +1,32 @@
-func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
-    var counts = 0
-    for i in 0..<nums.count {
-            if val == nums[i] {
-                nums.remove(at: i)
+func majorityElement(_ nums: [Int]) -> Int {
+       var result = 0
+    var maxCount: [Int:Int] = [:]
+    for arrayValue in nums {
+        for (key, value) in maxCount{
+            if (arrayValue != key) {
+                maxCount[key] = 1
+            } else {
+                maxCount[key] = value + 1
             }
         }
-    counts = nums.count
-    return counts
+        
     }
 
-var nums = [1,2,3,4,5]
-removeElement(&nums, 5)
-nums
+        return result
+    }
+
+
+var nums = [1,2,3,3,3,5]
+var maxCount: [Int:Int] = [:]
+for arrayValue in nums {
+    for (key, value) in maxCount{
+        if (arrayValue != key) {
+            maxCount[key] = 1
+        } else {
+            maxCount[key] = value + 1
+        }
+    }
+    
+}
+
+maxCount
