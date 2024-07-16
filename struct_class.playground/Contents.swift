@@ -271,15 +271,15 @@ ritik.say()
 ritik.sayHello()///it is an inherite property
 
 
-///Another method to use child class
-let mohit = dev(name: "j") as! ios_developer///treat dev class as ios developer . nt recommended because they are not exactly same
-mohit.bye()
-mohit.uiFramework
 
 //MARK:  Memory ARC(Automatic Reference Counting) (Only in classes)
 /*
+ 
+ ARC automatically frees up the memory used by class instances when those instances are no longer needed.
+ 
  For each object it holds the count that how much refrences are pointing to this object.
  Used for deallocating the object means you have done work  with object or not allocated to any another var . now you want to nil it but not mannually.
+ 
  working:
     • When you create an instance of a class, ARC sets its reference count to 1.
      •    Every time you assign that instance to a new variable or constant, ARC increases the reference count by 1.
@@ -296,24 +296,35 @@ mohit.uiFramework
  
  */
 
-class module {
-    var name: String
+class Person {
+    let name: String
     init(name: String) {
         self.name = name
+        print("\(name) is being initialized")
     }
-    var sub: submodule?
-    
-    deinit {    ///Only calls when object is being released from the memory
-        print("Object is being deinitialized")
+    deinit { ///prints a message when an instance of the class is deallocated.
+        print("\(name) is being deinitialized")
     }
 }
 
+var reference1: Person?
+var reference2: Person?
+var reference3: Person?
+///Because they r optional type it automatically initialized with a value of nil, and don’t currently reference a Person instance.
 
-class submodule {
-    var num: Int
-    init(num: Int) {
-        self.num = num
-    }
-    var topic: module?
-}
-///......
+reference1 = Person(name: "ayush")
+//Prints "John Appleseed is being initialized"
+///Note that the message "John Appleseed is being initialized" is printed at the point that you call the Person class’s initializer. This confirms that initialization has taken place.
+
+///If you assign the same Person instance to two more variables, two more strong references to that instance are established:
+
+reference2 = reference1
+reference3 = reference2
+///There are now three strong references to this single Person instance.
+
+///If you break two of these strong references (including the original reference) by assigning nil to two of the variables, a single strong reference remains, and the Person instance isn’t deallocated:
+reference1 = nil
+reference2 = nil
+
+///ARC doesn’t deallocate the Person instance until the third and final strong reference is broken, at which point it’s clear that you are no longer using the Person instance:
+reference3 = nil
