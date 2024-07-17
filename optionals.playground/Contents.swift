@@ -12,27 +12,16 @@ if let old = age.last {
     print("oldest age is \(old)")
 }
 else {
+    //if age.last is empty come here. else is not mandat to use
     print("there is no old age")
 }
-/// can also take input in integer
 
-/// Problem: Want to check given user element contains in that array  or not don't use functions of array'
+//MARK: - guard (like a wall in func)
 
-var userName = ["ritik", "ayush", "sonu", "mohit", "roshni", "ayush"]
-var count = 0
-if let userE = readLine() {
-    for i in userName {
-        if i == userE {
-           count += 1
-        }
+func oldage () {
+    guard var old = age.last else {return} // return will exit func if nil
     }
-    if count >= 1 {
-        print("User input '\(userE)' is  available in array")
-    } else {
-         print("User input '\(userE)' is not available in array")
-    }
-}
-
+///else is compulsary in guard its only diff bw if let & guard let
 //MARK: - nil coalescing '??'
 
 var old = age.last ?? 100      //100 is a default
@@ -47,11 +36,7 @@ let w = Int(readLine() ?? "") ?? 0
 let area = l * w
 print(area)
 
-//MARK: - guard (like a wall in func)
 
-func oldage () {
-    guard var old = age.last else {return} // return will exit func if nil
-    }
 
 
 //MARK: - Force unwrap (Generally not recommended by dev)
