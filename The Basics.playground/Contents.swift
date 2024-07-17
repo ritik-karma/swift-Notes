@@ -109,3 +109,16 @@ add(num: Int(10.45))
 //sum += i (sum = sum + i)
 
 
+//MARK: - Acces specifiers ( for: classes structs var func)
+/*Types: from full restricted to full freedom
+ 
+ private:- Cannot be accessed outside only within
+ 
+ fileprivate: - Can be accessed outside also but cannot accessed outside the file
+ 
+ internal (Default):- another file also
+ 
+ public :- can be accessed another module (projects) also like framworks.But cannot overide it only retrive
+ 
+ open: full freedom
+ */

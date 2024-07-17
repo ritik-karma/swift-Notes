@@ -272,6 +272,11 @@ ritik.sayHello()///it is an inherite property
 
 
 
+
+
+
+
+
 //MARK:  Memory ARC(Automatic Reference Counting) (Only in classes)
 /*
  
@@ -328,3 +333,18 @@ reference2 = nil
 
 ///ARC doesn’t deallocate the Person instance until the third and final strong reference is broken, at which point it’s clear that you are no longer using the Person instance:
 reference3 = nil
+
+
+//MARK: - Extention (can work in both struct & classses also on strings)
+//Used to add some functionality in the class
+
+extension dev {
+    func devUpdated()  {
+        print("Updated dev class")
+    }
+}
+T03.devUpdated()
+
+
+
+

@@ -1,8 +1,11 @@
 //MARK: - array (ordered - same type)
 
 var item = ["ritik",  "karma"]
+var gender: [Any] = []            ///Any used to take initial any type (further types should same)
 var clas = ["a", "b", "c"]
 var num = [1,2,3,0,0]
+ num[1]                             ///getter
+num[1] = 10                         ///setter
 
 var agee: [Int]                  ///Declared but not initialized
 var age: [Int] = []

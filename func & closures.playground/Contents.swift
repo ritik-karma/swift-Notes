@@ -6,8 +6,8 @@ func (implicitly internal): Visible only within the module where it is defined. 
 
 */
 //MARK: -
-func PrintName() {
-    print("Ayush")
+func PrintName() -> Any {
+    return "Ayush"
 }
 PrintName()
 
@@ -212,6 +212,5 @@ result("goa")// Each call to result("goa") executes the closure, which prints th
 result("goa")
 result("goa")
 numbuu()
-
 
 
