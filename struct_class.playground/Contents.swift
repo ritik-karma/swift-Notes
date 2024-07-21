@@ -189,7 +189,6 @@ struct Progress {
 var progres1 = Progress(task: "code", pay: 500)
 progres1.pay
 progres1.pay = 1000  ///Output: my code amount is 500 /n my code amount is before 500 and current is 1000
- 
 
 
 //MARK: - class (Refrence type)

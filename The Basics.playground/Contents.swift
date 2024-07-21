@@ -24,6 +24,12 @@ var age = 24                        // var is mutable
     //or
 var aage: Int = 24
 
+var value = Int()           ///alloating initial value
+var values: Int             ///Only declared not initialized. if used then will get an error
+var string = String()
+value
+string
+
 var foo = false
 var foo2 = foo
 foo = true
