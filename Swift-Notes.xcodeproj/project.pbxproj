@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		F81261F52C50BDB9001A7DFB /* Protocols.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Protocols.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F840FBB22C4248100052EC09 /* 0Rough.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 0Rough.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F8B7C4512C4248ED00E9FA63 /* Collections & itsMethods.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Collections & itsMethods.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F8DD308E2C2931A5003C6811 /* apiCall.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = apiCall.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		F8DD308F2C2931A5003C6811 /* codable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = codable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F8DD30902C2931A5003C6811 /* tryCatch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = tryCatch.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F8DD30912C2931A5003C6811 /* loops.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = loops.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F8DD30922C2931A5003C6811 /* Enums.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Enums.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -26,10 +26,10 @@
 		F857C4F92C293106006E5B6B = {
 			isa = PBXGroup;
 			children = (
+				F81261F52C50BDB9001A7DFB /* Protocols.playground */,
 				F8B7C4512C4248ED00E9FA63 /* Collections & itsMethods.playground */,
 				F840FBB22C4248100052EC09 /* 0Rough.playground */,
 				F8DD308E2C2931A5003C6811 /* apiCall.playground */,
-				F8DD308F2C2931A5003C6811 /* codable.playground */,
 				F8DD30902C2931A5003C6811 /* tryCatch.playground */,
 				F8DD30912C2931A5003C6811 /* loops.playground */,
 				F8DD30922C2931A5003C6811 /* Enums.playground */,

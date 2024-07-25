@@ -100,6 +100,7 @@ let O2workAddress = userObj2.address?["work"] ///? is used to indicate optional 
 
 print(O2workAddress ?? "no work address")
 print(userObj2.address?["Home"] ?? "no home address")
+///we can use force unwrap instead optional chaining but as you know its not good practice of using force unwrap.
 print(userObj2.address?["Home"]?.city ?? "no city")
 ///Why two ? ↓
 /*
