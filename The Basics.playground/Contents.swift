@@ -129,3 +129,10 @@ add(num: Int(10.45))
  
  open: full freedom
  */
+
+//MARK: - DEBUG PRINT
+//debugPrint:
+//
+//    •    Provides more detailed and descriptive output.
+//    •    Particularly useful for debugging purposes.
+//    •    Outputs additional information for complex data types, such as describing optionals and custom types.
