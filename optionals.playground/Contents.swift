@@ -42,6 +42,8 @@ if bio != nil {
 
 
 //MARK: - optional binding 
+//can use let , var or case
+
 
 //MARK: 'if let'
 ///If its not empty assign to this
@@ -74,6 +76,9 @@ oldage()
  - else is compulsary in guard
  -  it created normal var nt local var
  */
+func ol () {
+    guard old > 1000 else {return}
+}
 
 //MARK: - Optional chaining
 

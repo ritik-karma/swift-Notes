@@ -1,12 +1,12 @@
-import UIKit
+import Foundation
 
 //MARK: Can use 'Actors' instead of 'semaphore' 'GCD with serial Queues' etc for modern programming.
 
 
 ///Similar to clases but only accessible to immutable things & func But you can access it with  await . also nt ssupport inherritence
-///UseCase: Used to do sequentially asyc operation
+///UseCase: Used to do async task in a sync way.
 
-
+/*
 class Student2 {
     let name = "chagan"
     var num = 0
@@ -59,8 +59,42 @@ for _ in 0...20 {
 
 DispatchQueue.concurrentPerform(iterations: 20) { _ in
     ///It will print sequentially async operattion   because of actors first doing read then write
-    Task{
+    Task{           ///task used for asyncrounous work
         print(await actorStud.studRank())
     }
 }
+
+
+*/
+//MARK: example
+
+actor Account {
+    var balance = 1000
+    func withdraw(amount: Int) {
+        guard (balance >= amount) else {return}
+        balance -= amount
+        print(balance)
+    }
+}
+
+actor Transaction {
+    let account: Account
+    init(account: Account) {
+        self.account = account
+    }
+    func performWithdraw(amount: Int) async{
+        await account.withdraw(amount: amount)
+    }
+}
+
+let demoAccount = Account()
+let manager = Transaction(account: demoAccount)
+
+await manager.account.balance
+
+Task{
+    await manager.performWithdraw(amount: 500)
+}
+
+await manager.account.balance
 
