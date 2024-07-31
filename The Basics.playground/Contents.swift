@@ -130,7 +130,7 @@ add(num: Int(10.45))
  open: full freedom
  */
 
-//MARK: - DEBUG PRINT
+//MARK: - DEBUG PRINT()
 //debugPrint:
 //
 //    •    Provides more detailed and descriptive output.

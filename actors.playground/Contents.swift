@@ -1,5 +1,6 @@
 import Foundation
-
+import UIKit
+import SwiftUI
 //MARK: Can use 'Actors' instead of 'semaphore' 'GCD with serial Queues' etc for modern programming.
 
 
@@ -71,7 +72,7 @@ DispatchQueue.concurrentPerform(iterations: 20) { _ in
 actor Account {
     var balance = 1000
     func withdraw(amount: Int) {
-        guard (balance >= amount) else {return}
+        guard (balance >= amount) else{ return }
         balance -= amount
         print(balance)
     }
@@ -80,7 +81,7 @@ actor Account {
 actor Transaction {
     let account: Account
     init(account: Account) {
-        self.account = account
+        self.account = account    ///selfAcc will reffer to this actor acc & another one is referrring to another acotor account which is Account
     }
     func performWithdraw(amount: Int) async{
         await account.withdraw(amount: amount)
@@ -92,8 +93,12 @@ let manager = Transaction(account: demoAccount)
 
 await manager.account.balance
 
-Task{
+Task{   ///its async so it will go concurrently
     await manager.performWithdraw(amount: 500)
+}
+
+Task{
+    await demoAccount.withdraw(amount: 100)
 }
 
 await manager.account.balance

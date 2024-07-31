@@ -77,7 +77,8 @@ oldage()
  -  it created normal var nt local var
  */
 func ol () {
-    guard old > 1000 else {return}
+    guard old > 1000 else {return} ///if guard is true then only it will go below of the code else return
+    print("ok")
 }
 
 //MARK: - Optional chaining

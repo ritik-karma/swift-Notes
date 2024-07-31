@@ -213,7 +213,7 @@ progres1.pay = 1000  ///Output: my code amount is 500 /n my code amount is befor
 
 class dev {
     var name: String
-    var job_title = "ios developer"   
+    var job_title = "ios developer"
     var sallary: Int
     
     init (name: String, sallary: Int) {
@@ -356,3 +356,6 @@ n.isEven
 
 
 
+//MARK: - static var (in class struct enum)
+
+///static var stores memory in heap instead of stack
