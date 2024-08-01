@@ -7,6 +7,8 @@ var num = [1,2,3,0,0]
  num[1]                             ///getter
 num[1] = 10                         ///setter
 
+var arrayOfAnyType: [Any] = [true, 4, "ok"]
+
 var agee: [Int]                  ///Declared but not initialized
 var age: [Int] = []
       //or                      //creates an empty Int array declared & Initialized

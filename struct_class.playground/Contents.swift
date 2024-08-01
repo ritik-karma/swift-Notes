@@ -237,10 +237,15 @@ let T03 = dev(name: "kdjkf")
 let T04 = dev(name: "ritik", sallary: 500 )
 let T05 = dev(name: "ayush", sallary: 900)
  
+print(T03 === T04)  ///we can check 2 instance is same or not with '==='
+///false because it has diff data
+
 T04.sallary ///O/P is 5 because in init last var is changing the I/P
 
 ///Shown below how it is refrence type.
 let T06 = T04
+print(T06 === T04) ///True because they share the same memory location
+ 
 T06.sallary = 1000
 T04.sallary               ///Change in my salary will affect t04 salary also because they are refering to the same class
 
@@ -329,7 +334,7 @@ reference2 = nil
 reference3 = nil
 
 
-//MARK: - Extention (can work in both struct & classses strings(Any) protocols)
+//MARK: - Extention (For struct - classses - Any - protocols)
 //Used to add some functionality in the class
 
 extension dev {
@@ -351,6 +356,7 @@ extension Int {
 var n = 10
 n.squared()
 n.isEven
+
 
 
 

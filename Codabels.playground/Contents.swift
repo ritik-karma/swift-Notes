@@ -61,3 +61,6 @@ if let encoding = try?encoder.encode(swift){
 //MARK: Coding keys
 ///if server var naming is diffrent from your var then we use coding keys to help in that situation
 
+
+
+

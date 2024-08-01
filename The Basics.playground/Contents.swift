@@ -114,7 +114,7 @@ add(num: Int(10.45))
 
 
 //sum += i (sum = sum + i)
-
+//identity operator '===' :- Used to compare instances of class
 
 //MARK: - Acces specifiers ( for: classes structs var func)
 /*Types: from full restricted to full freedom
