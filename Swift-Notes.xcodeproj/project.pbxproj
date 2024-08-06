@@ -11,6 +11,7 @@
 		F80DC00E2C53B5F000310F6D /* actors.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = actors.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F81261F52C50BDB9001A7DFB /* Protocols.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Protocols.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F81DAD1F2C5E496D00E42446 /* ComputedProperty.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ComputedProperty.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F81DAD212C5EA35E00E42446 /* $.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = $.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F83F00462C59F47A00173455 /* Opaque_(some).playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Opaque_(some).playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F83F00492C5A6B6D00173455 /* Singleton.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Singleton.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F83F10692C5B51FD00BA43C1 /* Codabels.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Codabels.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -36,6 +37,7 @@
 		F857C4F92C293106006E5B6B = {
 			isa = PBXGroup;
 			children = (
+				F81DAD212C5EA35E00E42446 /* $.playground */,
 				F81DAD1F2C5E496D00E42446 /* ComputedProperty.playground */,
 				F83F10692C5B51FD00BA43C1 /* Codabels.playground */,
 				F83F00492C5A6B6D00173455 /* Singleton.playground */,

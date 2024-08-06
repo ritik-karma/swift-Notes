@@ -38,3 +38,7 @@ for char in surname.reversed() {
 
 
 
+var num = 4
+
+String(num)    //for conveting basic types into string
+String(describing: num) //for some complex ones

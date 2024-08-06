@@ -24,6 +24,8 @@ var age = 24                        // var is mutable
     //or
 var aage: Int = 24
 
+print(type(of: age))           ///returns the type of something
+
 var value = Int()           ///alloating initial value
 var values: Int             ///Only declared not initialized. if used then will get an error
 var string = String()
@@ -110,8 +112,20 @@ func add(num: Int) -> Int {
 add(num: Int(10.45))
 
 
+//MARK: - type Checking with 'as?'
+///Only prefered for if let conditions.   (only suceed if its INT)
+/*
+ as?: Returns an optional value; it safely handles cases where the cast might fail.
+ as!: Assumes the cast will succeed and will crash if it doesn’t. (Not Recommended)
+*/
+var num0 = 3
+if let myNum = num0 as? Int {
+    print(myNum)
+}
+
 //MARK: - Operators
 
+///Logical not operator '!' = used for bool output for toggle it
 
 //sum += i (sum = sum + i)
 //identity operator '===' :- Used to compare instances of class

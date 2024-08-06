@@ -4,6 +4,27 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>$ (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
+		<key>$ (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>22</integer>
+		</dict>
+		<key>$ (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>20</integer>
+		</dict>
 		<key>0Rough (Playground) 1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,7 +65,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>1</integer>
 		</dict>
 		<key>0exercises (Playground) 1.xcscheme</key>
 		<dict>
@@ -107,7 +128,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>10</integer>
 		</dict>
 		<key>Codable_Extensions (Playground) 1.xcscheme</key>
 		<dict>
@@ -212,7 +233,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>18</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Combine (Playground) 1.xcscheme</key>
 		<dict>
@@ -233,7 +254,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>17</integer>
 		</dict>
 		<key>ComputedProperty (Playground) 1.xcscheme</key>
 		<dict>
@@ -254,7 +275,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>19</integer>
+			<integer>4</integer>
 		</dict>
 		<key>Concurrency (Playground) 1.xcscheme</key>
 		<dict>
@@ -317,7 +338,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>9</integer>
 		</dict>
 		<key>Opaque_(some) (Playground) 1.xcscheme</key>
 		<dict>
@@ -338,7 +359,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>14</integer>
 		</dict>
 		<key>Practice (Playground) 1.xcscheme</key>
 		<dict>
@@ -436,7 +457,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>16</integer>
+			<integer>18</integer>
 		</dict>
 		<key>Singleton (Playground) 1.xcscheme</key>
 		<dict>
@@ -457,7 +478,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>13</integer>
 		</dict>
 		<key>The Basics (Playground) 1.xcscheme</key>
 		<dict>
@@ -478,7 +499,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>15</integer>
 		</dict>
 		<key>actors (Playground) 1.xcscheme</key>
 		<dict>
@@ -499,7 +520,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>0</integer>
 		</dict>
 		<key>apiCall (Playground) 1.xcscheme</key>
 		<dict>
@@ -527,7 +548,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>6</integer>
 		</dict>
 		<key>codable (Playground) 1.xcscheme</key>
 		<dict>
@@ -590,7 +611,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>12</integer>
 		</dict>
 		<key>highOrderFunc (Playground) 1.xcscheme</key>
 		<dict>
@@ -632,7 +653,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>17</integer>
+			<integer>5</integer>
 		</dict>
 		<key>loops (Playground) 1.xcscheme</key>
 		<dict>
@@ -653,7 +674,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>7</integer>
 		</dict>
 		<key>opaqueType (Playground) 1.xcscheme</key>
 		<dict>
@@ -695,7 +716,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>11</integer>
 		</dict>
 		<key>protocols (Playground) 1.xcscheme</key>
 		<dict>
@@ -737,7 +758,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>2</integer>
 		</dict>
 		<key>struct_class (Playground) 1.xcscheme</key>
 		<dict>
@@ -758,7 +779,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>16</integer>
 		</dict>
 		<key>struct_class_actors (Playground) 1.xcscheme</key>
 		<dict>
@@ -800,7 +821,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>8</integer>
 		</dict>
 		<key>tryCatch (Playground) 1.xcscheme</key>
 		<dict>
@@ -821,7 +842,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>19</integer>
 		</dict>
 	</dict>
 </dict>
